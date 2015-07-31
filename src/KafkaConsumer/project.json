@@ -1,0 +1,20 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Kafka Consumer Console Application",
+  "authors": [ "ducas.francis" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "kafka-net": "1.0.0"
+  },
+
+  "commands": {
+    "Consumer": "Consumer"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
+}
