@@ -23,7 +23,7 @@ namespace Consumer
 
             var kafkaOptions = new KafkaOptions(options.KafkaNodeUri);
             using (var router = new BrokerRouter(kafkaOptions))
-            using (var client = new KafkaNet.Consumer(new ConsumerOptions("TestHarness", new BrokerRouter(options)) { Log = new ConsoleLog(), MinimumBytes = 1 }))
+            using (var client = new KafkaNet.Consumer(new ConsumerOptions("TestHarness", router) { Log = new ConsoleLog(), MinimumBytes = 1 }))
             {
                 foreach (var message in client.Consume())
                 {
