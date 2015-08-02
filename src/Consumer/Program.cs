@@ -25,6 +25,7 @@ namespace Consumer
             using (var router = new BrokerRouter(kafkaOptions))
             using (var client = new KafkaNet.Consumer(new ConsumerOptions("TestHarness", router) { Log = new ConsoleLog(), MinimumBytes = 1 }))
             {
+                Console.WriteLine("Listening for messages...");
                 foreach (var message in client.Consume())
                 {
                     try
