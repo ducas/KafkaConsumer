@@ -1,0 +1,44 @@
+{
+  "locked": false,
+  "version": 1,
+  "targets": {
+    "DNX,Version=v4.5.1": {
+      "kafka-net/1.0.0": {
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/kafka-net.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/kafka-net.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "kafka-net/1.0.0": {
+      "sha512": "2x33QwKC7He9McrXSnnTpfWCAZnTWyLk/c/MA7YryjAxV+CT+zkWry2xNvQbAPfoiklAav7CAfnOqcBEHKRJ6g==",
+      "files": [
+        "kafka-net.1.0.0.nupkg",
+        "kafka-net.1.0.0.nupkg.sha512",
+        "kafka-net.nuspec",
+        "lib/dnx45/kafka-net.dll",
+        "lib/dnx45/kafka-net.xml",
+        "lib/dnx451/kafka-net.dll",
+        "lib/dnx451/kafka-net.xml",
+        "lib/dnxcore50/kafka-net.dll",
+        "lib/dnxcore50/kafka-net.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "kafka-net >= 1.0.0"
+    ],
+    "DNX,Version=v4.5.1": []
+  }
+}
